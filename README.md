@@ -1,11 +1,8 @@
-# 股票行情分析预测系统
-
-## 项目概述
-
+股票行情分析预测系统
+项目概述
 股票行情分析预测系统是一个基于Dash框架构建的专业金融分析平台，集成了多种机器学习算法和技术指标分析工具，为投资者提供全面的股票市场分析、预测和可视化功能。系统支持多维度数据分析，包括技术指标可视化、聚类分析、决策树估值、SVM预测、LSTM时序预测等核心功能，并结合新闻情感分析提供综合投资建议。
 
-## 系统架构
-
+系统架构
 graph TD
     A[Dash前端] --> B[核心分析模块]
     A --> C[预测模型模块]
@@ -18,6 +15,8 @@ graph TD
     D --> J[K线图表]
     D --> K[股票云图]
     D --> L[新闻情感分析]
+
+
 功能模块
 1. 主行情分析
 多股票并行分析
@@ -86,7 +85,7 @@ cd stock-analysis-system
 安装依赖：
 pip install -r requirements.txt
 配置环境变量：
-创建 .env 文件并添加：
+创建.env文件并添加：
 TU_SHARE_TOKEN=your_tushare_token
 DASHSCOPE_API_KEY=your_dashscope_key
 运行应用：
@@ -146,26 +145,24 @@ news_analysis = analyze_news_sentiment("宁德时代发布新一代麒麟电池�
     'keywords': '宁德时代,麒麟电池,能量密度'
 }
 API文档
-数据获取函数
 fetch_stock_data(stock_codes, start_date, end_date, k_type='D')
+​​功能​​：获取多股票历史数据
+​​参数​​：
 
-功能：获取多股票历史数据
-参数：
 stock_codes: 股票代码列表（逗号分隔）
 start_date: 开始日期（YYYY-MM-DD）
 end_date: 结束日期（YYYY-MM-DD）
 k_type: K线类型（D:日线, W:周线, M:月线）
-返回：包含历史数据的DataFrame
-技术指标计算
+​​返回​​：包含历史数据的DataFrame
 calculate_macd(df)
+​​功能​​：计算MACD指标
+​​参数​​：包含收盘价的DataFrame
+​​返回​​：(MACD线, 信号线, 柱状图)
 
-功能：计算MACD指标
-参数：包含收盘价的DataFrame
-返回：(MACD线, 信号线, 柱状图)
 calculate_kdj(df, n=9, m1=3, m2=3)
+​​功能​​：计算KDJ指标
+​​返回​​：(K值, D值, J值)
 
-功能：计算KDJ指标
-返回：(K值, D值, J值)
 性能优化
 ​​数据缓存机制​​：
 使用内存缓存频繁访问的股票数据
@@ -189,7 +186,7 @@ Fork项目仓库
 推送到分支（git push origin feature/AmazingFeature）
 创建Pull Request
 许可证
-本项目采用 MIT License
+本项目采用 ​​MIT License​​
 
 致谢
 Tushare提供金融数据支持
