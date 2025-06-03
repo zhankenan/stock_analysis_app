@@ -6,7 +6,6 @@
 
 ## 系统架构
 
-```mermaid
 graph TD
     A[Dash前端] --> B[核心分析模块]
     A --> C[预测模型模块]
