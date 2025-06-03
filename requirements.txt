@@ -1,0 +1,11 @@
+dash
+dash-bootstrap-components
+pandas
+numpy
+tushare
+plotly
+scikit-learn
+tensorflow
+seaborn
+matplotlib
+dashscope
