@@ -74,7 +74,3 @@ python app.py
 ## 贡献指南
 
 欢迎提交Pull Request或Issue报告问题。请确保代码风格一致并通过测试。
-
-## 许可证
-
-MIT License
